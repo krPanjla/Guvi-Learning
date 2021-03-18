@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        .heading{
+            color:white;
+            font-style:normal;
+            align-items: center;
+            background-color: rgb(102, 0, 0);
+            font-family: Arial;
+            text-align: center;
+            width: 100%;
+           
+        }
+        #main_content{
+           background-color:#ffffdd;
+           padding-top: 1px;
+           font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        
+        #main-table,td,tr{
+            border:solid black   ;
+            border-collapse: collapse;
+            border-width: thin ;
+        column-width: inherit;
+        }
+  
+
+        b{
+            margin-right: 30px;
+        }
+
+        .ast{
+            color: red;
+        }
+    </style>
+</head>
+<body><div>
+    <form action="/Api call/script.js">
+        <div class=heading>
+            <section>Request For New PAN Card Or/And Changes Or Correction in PAN Data<br>
+                Fields marked with <font class="ast">*</font> (asterisk) are mandatory. . To avoid mistake(s), please refer <a href=""><font color='#ff9900'>guidelines</font></a> and <a href="" >  <font color='#ff9900'>instructions</font> </a> .</section>
+        </div>
+
+
+        <div id="main_content">
+         
+            <table id="main-table" style="width: 100%;"> 
+                <tr>
+                    <td style="padding-left: 5px; padding-right: 5px;" ></td>
+                    <td>
+                        <b><font class="ast">*</font>Whether citizen of India  </b> 
+                        <label for="citizen of India">Yes</label>
+                        <input type="radio" id="citizen of India" name="citizen of India" value="Yes">
+                        <label for="citizen of India">No</label>
+                        <input type="radio" id="citizen of India" name="citizen of India" value="No">
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-left: 5px; padding-right: 5px;" ></td>
+                    <td>
+                        <b><font class="ast">*</font>Permanent Account Number (PAN)</b> 
+                       
+                        <input type="text" id="pan number" name="pan number" >
+                        
+                        
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding-left: 5px; padding-right: 5px;" >
+                        <input type='checkbox' id="person-name" name="person-name" ></td>
+                    <td>
+                        <label for="person-name"><b><font class="ast">*</font>1.Name</b> </label>
+                        
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding-left: 5px; padding-right: 5px;" ></td>
+                    <td>
+                        <b>Title</b> 
+                        <label for="title">Shri/Mr </label>
+                        <input type="radio" id="title" name="title" value="Shri/Mr ">
+                        <label for="title">Smt./Mrs</label>
+                        <input type="radio" id="title" name="title" value="Smt./Mrs ">
+                        <label for="title">Kumari/Ms </label>
+                        <input type="radio" id="title" name="title" value="Kumari/Ms ">
+                        
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding-left: 5px; padding-right: 5px;" ></td>
+                    <td>
+                        <table >
+                            <tr >
+                                <td style=" border: none; padding-right: 200px; ">
+                                <label for="last-name"><b>Last Name/Surname</b></label>
+                                </td>
+                                <td style="border: none; padding-right: 200px">
+                                    <label for="First Name"><b >First Name</b></label>
+                                </td>
+                                <td style="border: none; padding-right: 200px">
+                                    <label for="Middle Name"><b>Middle Name</b></label><br>
+                                </td>
+                            </tr>
+                            <tr >
+                                <td style="border: none;"><input type="text" id="last-name"  ></td>
+                                <td style="border: none;"> <input type="text" id="First Name" ></td>
+                                <td style="border: none;"><input type="text" id="Middle Name" ></td>
+                            </tr>
+                        </table>
+         
+                        
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding-left: 5px; padding-right: 5px;" ></td>
+                    <td>
+                        <label for="Name as you would like it printed on the card "><b ><font class="ast">*</font>Name as you would like it printed on the card <a href="">(Prefix like Shri, Smt, Kumari, Late, Dr, CA, Ms, Mr, Mrs, M/s, Alias etc. are not allowed)</a></b></label>
+                        <br>
+
+                        <input type="text" id="Name as you would like it printed on the card "  >
+                        
+                        
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-left: 5px; padding-right: 5px;" ></td>
+                    <td colspan="2">
+                        <b >Details of Parents. <a href="">(Prefix like Shri, Smt, Kumari, Late, Dr, CA, Ms, Mr, Mrs, M/s, Alias etc. are not allowed.) </a></b>
+                     
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-left: 5px; padding-right: 5px;" ></td>
+                    <td colspan="2">
+                        <label for="Name as you would like it printed on the card "><b >Whether mother is single parent and you wish to apply for PAN by furnishing the name of your mother only</b></label>
+                     
+                    </td>
+                    <td colspan="2"><label for="Whether mother is single parent">Yes</label>
+                        <input type="radio" id="Whether mother is single parent" name="Whether mother is single parent" value="Yes">
+                        <label for="Whether mother is single parent">No</label>
+                        <input type="radio" id="Whether mother is single parent" name="Whether mother is single parent" value="No"></td>
+                </tr>
+                <tr>
+                    <td style="padding-left: 5px; padding-right: 5px;" >
+                        <input type='checkbox' id="father-name" name="father-name" ></td></td>
+                    <td  >
+                        <b><font class="ast">*</font>Father's Name<a href="">(Mandatory field. Even married women should give father's name only.) </a></b>
+                     
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-left: 5px; padding-right: 5px;" ></td>
+                    <td>
+                        <table >
+                            <tr >
+                                <td style=" border: none; padding-right: 200px; ">
+                                <label for="last-name"><b>Last Name/Surname </b></label>
+                                </td>
+                                <td style="border: none; padding-right: 200px">
+                                    <label for="First Name"><b >First Name</b></label>
+                                </td>
+                                <td style="border: none; padding-right: 200px">
+                                    <label for="Middle Name"><b>Middle Name</b></label><br>
+                                </td>
+                            </tr>
+                            <tr >
+                                <td style="border: none;"><input type="text" id="last-name"  ></td>
+                                <td style="border: none;"> <input type="text" id="First Name" ></td>
+                                <td style="border: none;"><input type="text" id="Middle Name" ></td>
+                            </tr>
+                        </table>
+         
+                        
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding-left: 5px; padding-right: 5px;" >
+                        <input type='checkbox' id="father-name" name="father-name" ></td></td>
+                    <td  >
+                        <b><a href="">Mother's Name(This field is optional) </a></b>
+                     
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-left: 5px; padding-right: 5px;" ></td>
+                    <td>
+                        <table >
+                            <tr >
+                                <td style=" border: none; padding-right: 200px; ">
+                                <label for="last-name"><b>Last Name/Surname</b></label>
+                                </td>
+                                <td style="border: none; padding-right: 200px">
+                                    <label for="First Name"><b >First Name</b></label>
+                                </td>
+                                <td style="border: none; padding-right: 200px">
+                                    <label for="Middle Name"><b>Middle Name</b></label><br>
+                                </td>
+                            </tr>
+                            <tr >
+                                <td style="border: none;"><input type="text" id="last-name"  ></td>
+                                <td style="border: none;"> <input type="text" id="First Name" ></td>
+                                <td style="border: none;"><input type="text" id="Middle Name" ></td>
+                            </tr>
+                        </table>
+         
+                        
+                    </td>
+                </tr>   
+            </table>
+        </div>
+    
+    </form>
+</div>
+</body>
+</html>

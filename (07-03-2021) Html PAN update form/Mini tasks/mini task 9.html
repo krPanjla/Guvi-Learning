@@ -1,0 +1,59 @@
+<!-- 9)Write HTML input tags snippet to show default values for all Form elements. -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        #astric{
+            color: red;
+        }
+        b{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-style: inherit;
+        }
+         div{
+            
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+  text-align: center;
+             
+         }
+    </style>
+</head>
+<body>
+    
+<div >
+    <form action="https://www.google.com/">
+
+        <b><b id="astric">*</b><label for='first_name' >First Name</label><br>
+        <input type="text" id='first_name' name="First-name"  value="Enter-First-Name" required><br><br>
+        
+        <b id="astric">*</b><label for='last_name'>Last Name</label><br>
+        <input type="text" id='last_name' name="Last-name" value="Enter-Last-Name"required><br><br>
+
+        <b id="astric">*</b><label for='phone_number'>Phone Number</label><br>
+        <input type="number" id='phone_number' name="phone-number" value="000000000"required><br><br>
+
+        <b id="astric">*</b><label for='e-mail'>E-mail</label><br>
+        <input type="email" id='e-mail' name="email" value="Enter-email"required><br><br>
+
+        <b id="astric">*</b><label for='comments'>Comments</label><br>
+        <textarea rows="10" cols="40"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </b>
+    </form>
+</div>
+</body>
+</html>

@@ -11,6 +11,8 @@
 
     *{
         margin: 0px ;padding : 0px;
+        font-weight: bold;
+        
     }
  .parent{
 background-color: black;
@@ -19,9 +21,9 @@ height: 100vh;
 position: relative;
  }
  .child{
-     background-color: blanchedalmond;
-     width: 430px;
-     height: 250px;
+     background-color: white;
+     width: 500px;
+     height: 330px;
      position:absolute;
      left:0;
      top: 0;
@@ -33,11 +35,26 @@ position: relative;
  }
 
  .main{
-     
-  
-
-     
+     margin: 5px;
+     border: solid black;
+    
  }
+.inp{
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    border-bottom-width: medium ;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    font-family: cursive;
+
+}
+
+.small{
+    font-size:small;
+}
+
+
 </style>
 
 </head>
@@ -46,7 +63,64 @@ position: relative;
     <div class="child">
 
         <div class="main">
+<div style=" padding: 5px; background-color: red; color: white; font-size: 20px; margin: 5px;  text-align: center;"><b>Yes! I want to subscribe to <i>Mag-O-Zine</i></b></div>
+<div style="padding: 10px;">
 
+    <table style="width: 100%;">
+        <tr>
+            <td>
+         <input type="text" id="first-name" class="inp"></td>
+            
+
+            <td><input type="text" id="last-name" class="inp"></td>
+        </tr>
+         <tr>
+            <td><label for="first-name" class="small">First Name</label></td>
+           
+            <td><label for="last-name"  class="small">Last Name</label></td>
+            
+        </tr>
+
+        <tr>
+            <td colspan="2"><input type="text" id="address" class="inp" style="width: 100%;"></td>
+
+        </tr>
+        
+        <tr><td colspan="2"><label for="address"  class="small">Address</label></td></tr>
+    </table>
+
+    
+  <table style="width: 100%;">
+      <tr>
+          <td><input type="text" id="City" class="inp" style="width: 100px; " value="joe"></td>
+          <td><input type="text" id="state" class="inp"style="width: 100px;"></td>
+          <td><input type="text" id="zip" class="inp"style="width: 100px;"></td>
+      </tr>
+      <tr>
+        <td><label for="City"  class="small">City</label></td>
+        <td><label for="state"  class="small">State</label></td>
+        <td><label for="zip"  class="small">Zip</label></td>
+    </tr>
+  </table>
+            
+<br>
+<label for="subscribe-for">Subscribe for:</label>&nbsp;&nbsp;
+<label for="subscribe-for">1 year ($ 19.95)</label>
+<input type="checkbox" id="subscribe-for" name="subscribe-for" value="1 year subscription">
+<label for="subscribe-for">2 year ($ 35.00)</label>
+<input type="checkbox" id="subscribe-for" name="subscribe-for" value="2 year subscription"><br>
+
+<label for="more-information">Send me more information about:</label><br>
+
+<input type="checkbox" id="subscribe-for" name="subscribe-for" value="1 year subscription">
+<label for="subscribe-for">Computer-Zine</label><br>
+
+<input type="checkbox" id="subscribe-for" name="subscribe-for" value="1 year subscription">
+<label for="subscribe-for">Fishing-Zine</label><br>
+
+<input type="checkbox" id="subscribe-for" name="subscribe-for" value="1 year subscription">
+<label for="subscribe-for">Cat-o-Zine</label><br>
+</div>
         </div>
     </div>
 

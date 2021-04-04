@@ -1,0 +1,75 @@
+.container{
+    background-color:white;
+}
+span{
+    font-weight: bold;
+    font-style: italic;
+   
+}
+.upr{
+    border-bottom: 2px solid black;
+}
+.headline{
+    font-size:90px;
+    
+}
+.nw1{
+    font-weight: bold;
+    text-align: center;
+}
+.rp{
+    font-weight: bold;
+    color: red;
+    font-size:27px;
+    text-align: center;
+}
+.low{
+    border-top: 2px solid black;
+}
+.pad{
+    margin-bottom: 35px;
+}
+.logo{
+    display: inline;
+    width: 53px;
+    height: 53px;
+    background-color: chartreuse;
+    border-radius: 50%;
+   
+    /* z-index: 1; */
+    position: absolute;
+}
+.pos{
+    
+    top: 50%;
+    left: 84%;
+}
+.lgtext{
+    color:white;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    /* font-size: 5px; */
+}
+.cp{
+    top:29%;
+    left:68%;
+}
+.banner{
+    height: fit-content;
+    width: fit-content;
+    background-color: maroon;
+    color:white ;
+    font-style: italic;
+    font-weight: 14px;
+    padding: 3px;
+    
+
+}
+.dyn{
+    position: absolute;
+    top: -15px;
+}
+*{
+    text-align: justify;
+}

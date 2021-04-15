@@ -28,7 +28,7 @@ async function main(){
             var countryPopulation=restCountryResult[i].population;
            // var coordinates=restCountryResult[i].latlng;
 
-            var column=createElement("div","col-4");
+            var column=createElement("div"," col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4");
             row.appendChild(column);
 
             var card=createElement("div","card text-center","margin:5px; height:500px")

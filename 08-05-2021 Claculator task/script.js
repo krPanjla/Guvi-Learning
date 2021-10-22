@@ -118,6 +118,7 @@ function clicked(e) {
 
     if (btn.id === "=") {
       var ans = exp.join("");
+      console.log(ans)
       var outp = eval(ans);
 
       output.innerHTML = outp;
@@ -129,7 +130,7 @@ function clicked(e) {
       exp = [];
     } else {
       exp.push(btn.id);
-      console.log(exp);
+     
 
       disp.innerText = exp.join("");
     }
